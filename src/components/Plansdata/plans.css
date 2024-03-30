@@ -1,0 +1,127 @@
+.plans {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  position: relative;
+  /* background-color: var(--gray); */
+}
+.plans-header {
+  display: flex;
+  width: 95%;
+  font-style: italic;
+  font-weight: bold;
+  margin: auto;
+  font-size: 4.2rem;
+  justify-content: space-between;
+  color: #fff;
+  text-transform: uppercase;
+}
+.plans-plans>svg{
+  fill: #fff;
+}
+.paid-plans {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.paid-plans > div {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.9rem;
+  background-color: var(--caloryCard);
+  transition: 500ms all;
+}
+.plans-category>svg{
+  fill: var(--orange);
+  width: 2rem;
+  height: 2rem;
+}
+
+.plans-category > span:nth-child(2) {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px 0;
+}
+.plans-category > span:nth-child(3) {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 20px 0;
+}
+.plans-category > span:nth-child(4) {
+  display: flex;
+  align-items: flex-start;justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  gap: 20px;
+  padding: 20px 0;
+}
+.plans-category > span >span{
+  display: flex;
+  align-items: center;
+
+  justify-content: center;gap: 20px;
+}
+.plans-category > span img{
+  width: 20px;
+}
+.plans-category .btn{
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: var(--appColor);
+  margin: 0 1.2rem;
+  border-radius: 10px;
+}
+.paid-plans > div:hover{
+  cursor:default;
+  fill: #fff;
+  transform: scale(1.1);
+  background: var(--planCard);
+}
+.plans-blur-1{
+  width: 33rem;
+  height: 23rem;
+  top: 5rem;
+  left: 0;
+}
+.plans-blur-2{
+  width: 33rem;
+  height: 23rem;
+  top: 5rem;
+  right: 0;
+}
+@media screen and (max-width:768px) {
+  .plans-header {
+
+   font-size: x-large;
+   display: flex;
+   flex-direction: column;
+   align-items: center;gap: 20px;
+   justify-content: center;
+  }
+  .paid-plans{
+    flex-direction: column;
+  }
+  .plans-category > span:nth-child(4){
+    font-size: small;
+    text-align: justify;
+    white-space: nowrap;
+  }
+  .paid-plans > div:hover{
+    transform: scale(1);
+  }
+  .plans-category .btn{
+    font-size: small;
+    padding: 5px;
+  
+    margin: auto;
+    border-radius: 2px;
+  }
+  .plans-category{
+    
+  }
+}

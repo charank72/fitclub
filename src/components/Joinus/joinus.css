@@ -1,0 +1,88 @@
+.joinus {
+  display: flex;
+  padding: 0 2rem;
+}
+.left-j {
+  flex: 1 1;
+  position: relative;
+  text-transform: uppercase;
+}
+.right-j {
+  flex: 1;
+}
+.left-j > div {
+  display: flex;
+  gap: 3rem;
+  color: #fff;
+  font-weight: bold;
+}
+.left-j > div > span {
+  font-size: 3.5rem;
+}
+.left-j hr {
+  position: absolute;
+  outline: none;
+  width: 28rem;
+  top: -2rem;
+  color: orange;
+  border: 3px solid var(--orange);
+}
+.right-j > form {
+  background-color: var(--gray);
+  width: 29rem;
+  height: 7rem;
+  margin: auto;
+}
+.right-j > form > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-j > form > div > input {
+  padding: 1.2rem;
+  /* font-size: 1.1rem; */
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.right-j > form > div > input::placeholder {
+  color: #fff;
+}
+.right-j > form > div > button {
+  background-color: orange;
+  color: gray;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  .joinus {
+    flex-direction: column;
+  }
+  .left-j > div {
+    gap: 0;
+    gap: 1.2em;
+  }
+  .left-j > div > span {
+    font-size: large;
+  }
+  .right-j > form{
+    margin-top: 13px;
+    color: transparent;
+    width: 17rem;
+    height: fit-content;
+  }
+  .right-j > form > div > input{
+    padding: 0;
+    width: 12rem;
+    font-size: medium;
+  }
+  .right-j > form > div > button{
+    width: 7rem;
+    font-size: small;
+    
+  }
+}

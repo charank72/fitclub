@@ -16,3 +16,30 @@
   color: var(--orange);
   cursor: pointer;
 }
+@media screen and (max-width:786px){
+  .header>:nth-child(2){
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  }
+  .logo{
+    width: 6rem;
+    height: 2rem;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bars{
+    width: 2rem;
+  }
+  .header-menu{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--appColor);
+    padding: 2rem;
+  }
+}
