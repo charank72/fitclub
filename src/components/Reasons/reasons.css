@@ -149,6 +149,11 @@
   .details-r img{
     width: 23px;
   }
+  .left-r>:nth-child(1){
+    grid-column: span 2;
+  }
+  
+
   .brands>span{
     color: #fff;
     padding-top: 45px;
